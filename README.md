@@ -8,6 +8,7 @@ Model
 1. Person
 	name
 	pid (internal id)
+	dob
 	address
 	city
 	country
@@ -16,3 +17,9 @@ Model
 	month
 	category
 	amount
+
+Part-1 working on database
+CREATE TABLE PERSON(PID int not null,
+	
+Part -2 Working on rest api for the client	
+

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+ <hibernate-mapping package="com.subir.hibernate.example">
+ 	<class name="Person" table="PERSON">
+ 	 <id name="pid" column="PID">
+ 	 	<generator class="identity"></generator>
+ 	 </id>
+ 	 <property name="name" column="NAME" />
+ 	 <property name="dob" column="DOB" />
+ 	 <property name="address" column="ADDRESS" />
+ 	 <property name="city" column="CITY" />
+ 	 <property name="country" column="COUNTRY" />
+ 	 <set name="monthlyExpenses" table="MONTHLY_EXPENSES" cascade="all">
+ 	 <key column="PID" not-null="true"></key>
+ 	 <one-to-many class="MonthlyExpense"/>
+ 	 </set>
+ 	</class>
+ </hibernate-mapping>       

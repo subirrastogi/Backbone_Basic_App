@@ -10,6 +10,7 @@ public class Person {
 	private String address;
 	private String city;
 	private String country;
+	private float age;
 	private Set<MonthlyExpense> monthlyExpenses;
 	public String getName() {
 		return name;
@@ -44,11 +45,25 @@ public class Person {
 	public int getPid() {
 		return pid;
 	}
+	
+	public void setPid(int id){
+		this.pid=id;
+	}
 	public Set<MonthlyExpense> getMonthlyExpenses() {
 		return monthlyExpenses;
 	}
 	public void setMonthlyExpenses(Set<MonthlyExpense> monthlyExpenses) {
 		this.monthlyExpenses = monthlyExpenses;
+	}
+	
+	public float getAge(){
+		/*Date today = new Date();
+		Date dob=this.getDob();
+		Date c=today-dob;
+		Calendar.getInstance().*/
+		//TODO - implement date differnece;
+		return (float) 1.1;
+		
 	}
 
 }

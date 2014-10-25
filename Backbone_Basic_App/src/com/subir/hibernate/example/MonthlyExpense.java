@@ -26,5 +26,9 @@ public class MonthlyExpense {
 	public int getMid() {
 		return mid;
 	}
+	
+	public void setMid(int id){
+		this.mid=id;
+	}
 
 }

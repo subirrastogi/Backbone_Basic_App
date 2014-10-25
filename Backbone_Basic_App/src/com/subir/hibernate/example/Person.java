@@ -3,9 +3,13 @@ package com.subir.hibernate.example;
 import java.util.Date;
 import java.util.Set;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 public class Person {
 	private String name;
 	private int pid;
+	
+	@JsonFormat(shape=JsonFormat.Shape.STRING, pattern="dd-MM-yyyy")
 	private Date dob;
 	private String address;
 	private String city;

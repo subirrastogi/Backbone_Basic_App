@@ -12,7 +12,7 @@
  	 <property name="address" column="ADDRESS" />
  	 <property name="city" column="CITY" />
  	 <property name="country" column="COUNTRY" />
- 	 <set name="monthlyExpenses" table="MONTHLY_EXPENSES" cascade="all">
+ 	 <set name="monthlyExpenses" table="MONTHLY_EXPENSES" cascade="all" lazy="false">
  	 <key column="PID" not-null="true"></key>
  	 <one-to-many class="MonthlyExpense"/>
  	 </set>

@@ -39,3 +39,9 @@ curl -H "Accept: application/json" -H "Content-type: application/json" -X POST -
 
 
 curl -H "Accept: application/json" -H "Content-type: application/json" -X PUT -d "{\"name\":\"PersonD\",\"pid\":\"105\",\"dob\":\"22-11-2014\",\"address\":\"East\",\"city\":\"Mumbai\",\"country\":\"India\"}" http://localhost:8089/Backbone_Basic_App/api/persons/105
+
+Part-3 Creating Backbone components
+
+	brwoseify command
+	cd F:\git_local_repo\Backbone_Basic_App\client
+	browserify -d main.js -o ../WebContent/js/bundle.js

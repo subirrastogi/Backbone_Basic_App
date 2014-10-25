@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>Hello</p>
+<div>
+<table>
+	<thead>
+		<tr>
+		<td>Name</td>
+		<td>Date of Birth</td>
+		<td>Address</td>
+		<td>City</td>
+		<td>Country</td>
+		</tr>
+	</thead>
+	<tbody id="person_list">
+	
+	</tbody>
+</table>
+</div>
+<script type="text/template" id="person-template">
+		<tr>
+		<td> <%- name %></td>
+		<td><%- dob %></td>
+		<td><%- address %></td>
+		<td><%- city %></td>
+		<td><%- country %></td>
+		</tr>
+	</script>
+<script src="js/bundle.js"></script>
+</body>
+</html>

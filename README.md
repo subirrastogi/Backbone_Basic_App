@@ -45,3 +45,6 @@ Part-3 Creating Backbone components
 	brwoseify command
 	cd F:\git_local_repo\Backbone_Basic_App\client
 	browserify -d main.js -o ../WebContent/js/bundle.js
+	
+	basic person collection view is complete.
+	adding pagination using backbone.obscura plugin.

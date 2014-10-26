@@ -2,7 +2,15 @@
 <html>
 <body>
 <p>Hello</p>
-<div>
+<div id='contentarea'>
+  
+</div>
+<script type="text/template" id="person-collection">
+<div id="button-panel">
+<button name="New" id="new_person">New</button>
+<button name="<" id="prev"></button>
+<button name=">" id="next"></button>
+</div>
 <table>
 	<thead>
 		<tr>
@@ -17,7 +25,9 @@
 	
 	</tbody>
 </table>
-</div>
+
+</script>
+
 <script type="text/template" id="person-template">
 		<tr>
 		<td> <%- name %></td>

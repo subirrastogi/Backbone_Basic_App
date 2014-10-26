@@ -8,5 +8,5 @@ var PersonCollectionView = require('./views/PersonCollectionView');
 var personList = new PersonCollection();
 personList.fetch({"reset": true});
 
-var personListView = new PersonCollectionView({el: '#person_list', collection:personList}); 
+var personListView = new PersonCollectionView({el: '#contentarea', collection:personList}); 
 console.log(personListView.el);

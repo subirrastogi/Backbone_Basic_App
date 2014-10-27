@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
+<head>
+<link href='css/bootstrap.css' rel='stylesheet' type='text/css'>
+</head>
 <body>
 <p>Hello</p>
 <div id='contentarea'>
   
 </div>
+ <div class="modal fade" id='form-view'></div>
 <script type="text/template" id="person-collection">
 <div id="button-panel">
 <button name="New" id="new_person">New</button>
-<button name="<" id="prev"></button>
-<button name=">" id="next"></button>
+<button name="<" id="prev"><span class="glyphicon glyphicon-chevron-left"></span></button>
+<button name=">" id="next"><span class="glyphicon glyphicon-chevron-right"></span></button>
 </div>
 <table>
 	<thead>
@@ -28,7 +32,7 @@
 
 </script>
 
-<script type="text/template" id="person-template">
+	<script type="text/template" id="person-template">
 		<tr>
 		<td> <%- name %></td>
 		<td><%- dob %></td>
@@ -37,6 +41,27 @@
 		<td><%- country %></td>
 		</tr>
 	</script>
+	
+<script type="text/template" id="person-formview-template">
+	
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">
+						<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+					</button>
+					<h4 class="modal-title">Modal title</h4>
+				</div>
+				<div class="modal-body">
+					<p>One fine body&hellip;</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Save changes</button>
+				</div>
+			</div>
+		</div>
+</script>
 <script src="js/bundle.js"></script>
 </body>
 </html>

@@ -4,6 +4,7 @@ Backbone.$ = $;
 var _ = require('underscore');
 Backbone.Obscura = require('backbone.obscura');
 var PersonView = require('./PersonView.js');
+var PersonFormView = require('./PersonFormView.js');
 
 var PersonCollectionView = Backbone.View.extend({
 	
@@ -17,7 +18,8 @@ var PersonCollectionView = Backbone.View.extend({
 	},
 	events : {
 		'click #prev' : 'onClickPrev',
-		'click #next' : 'onClickNext'
+		'click #next' : 'onClickNext',
+		'clck #new_person' : 'newPerson'
 	},
 	render : function(){
 		this.$el.html(this.template);
@@ -47,6 +49,10 @@ var PersonCollectionView = Backbone.View.extend({
 		if(this.proxy.hasNextPage()){
 			this.proxy.nextPage();
 		}
+	},
+	newPerson : function(){
+		var view = new PersonFormView();
+		view.render();
 	}
 }); 
 

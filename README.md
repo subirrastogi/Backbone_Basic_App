@@ -48,3 +48,6 @@ Part-3 Creating Backbone components
 	
 	basic person collection view is complete.
 	adding pagination using backbone.obscura plugin.
+	
+	Using link http://darkhorseanalytics.com/blog/clear-off-the-table/
+	to format table.

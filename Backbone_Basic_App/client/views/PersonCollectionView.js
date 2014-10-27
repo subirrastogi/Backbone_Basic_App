@@ -11,7 +11,7 @@ var PersonCollectionView = Backbone.View.extend({
 	initialize : function(options){
 		this.collection=options.collection;
 		this.proxy = new Backbone.Obscura(this.collection);
-		this.proxy.setPerPage(2);
+		this.proxy.setPerPage(5);
 		this.render();
 		this.listenTo(this.proxy, 'reset', this.update);
 	},

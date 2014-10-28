@@ -51,3 +51,5 @@ Part-3 Creating Backbone components
 	
 	Using link http://darkhorseanalytics.com/blog/clear-off-the-table/
 	to format table.
+	
+	//TODO - Use browserify-shim for backbone, currently I have used window global. It's not correct.
